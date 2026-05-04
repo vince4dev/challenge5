@@ -27,13 +27,13 @@
 /* VARIABLES ---------------------------------- */
 :root {
   /* colors */
-  --clr-primary-Green-500: hsl(158, 36%, 37%);
-  --clr-primary-Green-700: hsl(158, 42%, 18%);
+  --clr-primary-green-500: hsl(158, 36%, 37%);
+  --clr-primary-green-700: hsl(158, 42%, 18%);
 
-  --clr-neutral-Black: hsl(212, 21%, 14%);
-  --clr-neutral-Grey: hsl(228, 12%, 48%);
-  --clr-neutral-Cream: hsl(30, 38%, 92%);
-  --clr-neutral-White: hsl(0, 0%, 100%);
+  --clr-neutral-black: hsl(212, 21%, 14%);
+  --clr-neutral-grey: hsl(228, 12%, 48%);
+  --clr-neutral-cream: hsl(30, 38%, 92%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
 
   /* fonts size */
   --fs-12: calc(12 / 16 * 1rem);
@@ -89,7 +89,7 @@ button {
 
 /* GENERAL ---------------------------------- */
 body {
-  background-color: var(--clr-neutral-Cream);
+  background-color: var(--clr-neutral-cream);
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-medium);
   display: flex;
@@ -101,7 +101,7 @@ body {
 /* ARTICLE ---------------------------------- */
 .perfume {
   max-width: 21.875rem;
-  background-color: var(--clr-neutral-White);
+  background-color: var(--clr-neutral-white);
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -122,7 +122,7 @@ body {
   line-height: var(--lh-120);
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: var(--clr-neutral-Grey);
+  color: var(--clr-neutral-grey);
 }
 
 .perfume__name {
@@ -135,7 +135,7 @@ body {
 .perfume__detail {
   font-size: var(--fs-14);
   line-height: var(--lh-160);
-  color: var(--clr-neutral-Grey);
+  color: var(--clr-neutral-grey);
 }
 
 .perfume__price {
@@ -149,13 +149,13 @@ body {
   font-size: var(--fs-32);
   font-weight: var(--fw-bold);
   line-height: var(--lh-100);
-  color: var(--clr-primary-Green-500);
+  color: var(--clr-primary-green-500);
 }
 
 .perfume__old-price {
   font-size: var(--fs-13);
   line-height: var(--lh-120);
-  color: var(--clr-neutral-Grey);
+  color: var(--clr-neutral-grey);
   text-decoration-line: line-through;
 }
 
@@ -167,14 +167,14 @@ body {
   padding-block: 1.2em;
   font-weight: var(--fw-bold);
   line-height: var(--lh-110);
-  background-color: var(--clr-primary-Green-500);
+  background-color: var(--clr-primary-green-500);
   border-radius: 0.5rem;
-  color: var(--clr-neutral-White);
+  color: var(--clr-neutral-white);
   transition: background-color 0.3s ease-in-out;
 }
 
 .perfume__btn:hover {
-  background-color: var(--clr-primary-Green-700);
+  background-color: var(--clr-primary-green-700);
 }
 
 @media (width >= 600px) {
