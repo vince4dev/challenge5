@@ -34,6 +34,7 @@
   --clr-neutral-grey: hsl(228, 12%, 48%);
   --clr-neutral-cream: hsl(30, 38%, 92%);
   --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-black: hsl(0, 0%, 0%);
 
   /* fonts size */
   --fs-12: calc(12 / 16 * 1rem);
@@ -168,8 +169,8 @@ body {
   font-weight: var(--fw-bold);
   line-height: var(--lh-110);
   background-color: var(--clr-primary-green-500);
-  border-radius: 0.5rem;
   color: var(--clr-neutral-white);
+  border-radius: 0.5rem;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -177,7 +178,16 @@ body {
   background-color: var(--clr-primary-green-700);
 }
 
-@media (width >= 600px) {
+.perfume__btn:focus-visible {
+  outline: 3px solid rgba(22, 160, 133, 0.4);
+  box-shadow: 6px 6px 0px hsla(168, 76%, 36%, 0.4);
+  color: var(--clr-primary-green-700);
+}
+.perfume__btn:focus-visible > img {
+  filter: invert(1);
+}
+
+@media (min-width: 600px) {
   .perfume {
     max-width: 37.5rem;
     display: flex;
