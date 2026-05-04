@@ -77,15 +77,14 @@ Users should be able to:
 }
 ```
 
-3. **text-decoration: line-through;**
+3. **semantic html `<del>`**
 
-- used the CSS property `text-decoration: line-through` to strikethrough the old price, thus improving the visual hierarchy.
+- used semantic element html `<del>` to strikethrough the old price, thus improving the visual hierarchy.
 
-```css
-.perfume__old-price {
-  ...
-  text-decoration-line: line-through;
-}
+```html
+...
+<del class="perfume__old-price">$169.99</del>
+...
 ```
 
 ### Useful resources
