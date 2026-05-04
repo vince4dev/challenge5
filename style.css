@@ -34,7 +34,6 @@
   --clr-neutral-grey: hsl(228, 12%, 48%);
   --clr-neutral-cream: hsl(30, 38%, 92%);
   --clr-neutral-white: hsl(0, 0%, 100%);
-  --clr-neutral-black: hsl(0, 0%, 0%);
 
   /* fonts size */
   --fs-12: calc(12 / 16 * 1rem);
@@ -97,6 +96,24 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+/* SKIP LINK ---------------------------------- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background-color: var(--clr-primary-green-500);
+  color: var(--clr-neutral-white);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
 }
 
 /* ARTICLE ---------------------------------- */
