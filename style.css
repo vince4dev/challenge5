@@ -1,0 +1,197 @@
+/* FONTS ---------------------------------- */
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/montserrat-v31-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/fraunces-v38-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* VARIABLES ---------------------------------- */
+:root {
+  /* colors */
+  --clr-primary-Green-500: hsl(158, 36%, 37%);
+  --clr-primary-Green-700: hsl(158, 42%, 18%);
+
+  --clr-neutral-Black: hsl(212, 21%, 14%);
+  --clr-neutral-Grey: hsl(228, 12%, 48%);
+  --clr-neutral-Cream: hsl(30, 38%, 92%);
+  --clr-neutral-White: hsl(0, 0%, 100%);
+
+  /* fonts size */
+  --fs-12: calc(12 / 16 * 1rem);
+  --fs-14: calc(14 / 16 * 1rem);
+  --fs-13: calc(13 / 16 * 1rem);
+  --fs-32: calc(32 / 16 * 1rem);
+
+  /* fonts weight */
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* fonts family */
+  --ff-montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+  --ff-fraunces: "Fraunces", "Times New Roman", Times, serif;
+
+  /* line-height */
+  --lh-100: 100%;
+  --lh-110: 110%;
+  --lh-120: 120%;
+  --lh-160: 160%;
+}
+
+/* RESET ---------------------------------- */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2 {
+  padding: 0;
+}
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* GENERAL ---------------------------------- */
+body {
+  background-color: var(--clr-neutral-Cream);
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ARTICLE ---------------------------------- */
+.perfume {
+  max-width: 21.875rem;
+  background-color: var(--clr-neutral-White);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.perfume__description {
+  padding: 2rem;
+
+  display: grid;
+  gap: 1.5rem;
+}
+.perfume__text {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.perfume__title {
+  font-size: var(--fs-12);
+  line-height: var(--lh-120);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--clr-neutral-Grey);
+}
+
+.perfume__name {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-100);
+}
+
+.perfume__detail {
+  font-size: var(--fs-14);
+  line-height: var(--lh-160);
+  color: var(--clr-neutral-Grey);
+}
+
+.perfume__price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.perfume__new-price {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-100);
+  color: var(--clr-primary-Green-500);
+}
+
+.perfume__old-price {
+  font-size: var(--fs-13);
+  line-height: var(--lh-120);
+  color: var(--clr-neutral-Grey);
+  text-decoration-line: line-through;
+}
+
+.perfume__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-block: 1.2em;
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-110);
+  background-color: var(--clr-primary-Green-500);
+  border-radius: 0.5rem;
+  color: var(--clr-neutral-White);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.perfume__btn:hover {
+  background-color: var(--clr-primary-Green-700);
+}
+
+@media (width >= 600px) {
+  .perfume {
+    max-width: 37.5rem;
+    display: flex;
+  }
+
+  .perfume__img img {
+    min-height: 100%;
+  }
+
+  .perfume__description {
+    max-width: 18.75rem;
+    gap: 2rem;
+  }
+  .perfume__text {
+    gap: 1.5rem;
+  }
+}

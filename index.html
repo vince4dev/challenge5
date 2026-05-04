@@ -19,30 +19,42 @@
   </head>
   <body>
     <main>
-      <picture>
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="Image of a Gabrielle de Chanel perfume bottle"
-        />
-      </picture>
-      <section>
-        <div class="perfume">
-          <h1 class="perfume__title">Perfume</h1>
-          <h1 class="perfume__name">Gabrielle Essence Eau De Parfum</h1>
-          <p class="perfume_description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
+      <article class="perfume">
+        <picture class="perfume__img">
+          <source
+            srcset="./assets/images/image-product-desktop.jpg"
+            media="(width >= 600px)"
+          />
+          <img
+            src="./assets/images/image-product-mobile.jpg"
+            alt="Image of a Gabrielle de Chanel perfume bottle"
+          />
+        </picture>
+
+        <div class="perfume__description">
+          <div class="perfume__text">
+            <h1 class="perfume__title">Perfume</h1>
+            <h2 class="perfume__name">Gabrielle Essence Eau De Parfum</h2>
+            <p class="perfume__detail">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
           <div class="perfume__price">
             <p class="perfume__new-price">$149.99</p>
             <p class="perfume__old-price">$169.99</p>
           </div>
           <button class="perfume__btn">
-            <img src="./images/icon-cart.svg" alt="cart icon" />
+            <img
+              src="./assets/images/icon-cart.svg"
+              width="18"
+              height="18"
+              alt="cart icon"
+            />
             Add to Cart
           </button>
         </div>
-      </section>
+      </article>
     </main>
   </body>
 </html>
